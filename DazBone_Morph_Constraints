@@ -1,0 +1,32 @@
+import bpy
+   
+
+for ob in bpy.data.objects:
+    if ob.type == 'ARMATURE':
+        break
+else:
+    raise(Exception("No armature found"))
+
+
+#Define Functions
+
+def Add_Constraints (target,moving):
+    import bpy
+    print ("Started")
+
+    target_rig = bpy.data.objects[target] # Character armature that will not change
+    moving_rig = bpy.data.objects[moving] # Character armature that will be changed to match the target rig
+    
+    for bone in moving_rig.pose.bones:
+      selected_bone = moving_rig.pose.bones[bone.name]
+
+      print (selected_bone)
+      constraint = selected_bone.constraints
+      CopyTransform = constraint.new('COPY_TRANSFORMS')
+      CopyTransform.target = target_rig
+      CopyTransform.subtarget = bone.name
+
+
+#Main Program
+
+Add_Constraints('Genesis8Male','Genesis8Male.001')
