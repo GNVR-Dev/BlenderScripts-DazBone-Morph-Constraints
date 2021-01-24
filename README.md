@@ -41,6 +41,8 @@ Open the Object Data Properties panel
 
 In the ShapeKeys area click the little down arrow and select Join as Shapes
 
+![Imgur](https://i.imgur.com/MxJY0vf.png)
+
 This will add the Arch Demon shapekey (without bone transforms) to your Genesis 8 Male character
 
 Click on the Genesis8Male.001 rig and go into Pose mode
