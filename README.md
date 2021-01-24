@@ -144,3 +144,30 @@ And click the dot to the right again to Animate porperty
 Scrubbing the timeline will now animate the bones and shapekeys together to transition from one character to another.
 
 ![Imgur](https://i.imgur.com/hHB4ohj.png)
+
+Adding your own animation:
+
+Go back into Pose Mode and select a bone
+
+Scrub along the timeline to the point you want to add the animation keyframe
+
+Rotate or move the bone 
+
+![Imgur](https://i.imgur.com/Z8u9uqO.png)
+
+Right Click and Insert Keyframe
+
+![Imgur](https://i.imgur.com/2T2mmae.png)
+
+This time select Location and Rotation
+
+![Imgur](https://i.imgur.com/5Q7XtL5.png)
+
+Keep adding animaitions as needed.
+
+
+
+
+
+
+F
