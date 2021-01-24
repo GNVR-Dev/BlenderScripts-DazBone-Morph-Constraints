@@ -29,4 +29,6 @@ def Add_Constraints (target,moving):
 
 #Main Program
 
+# Formatting hint: Add_Constraints('Name_of_rig_that_is_staying_in_place','Name_of_rig_that_will_be_moved_and_constrained')
+
 Add_Constraints('Genesis8Male','Genesis8Male.001')
