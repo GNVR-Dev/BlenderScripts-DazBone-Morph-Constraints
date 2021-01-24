@@ -13,9 +13,11 @@ For this example we will transition from Basic Male 8 to Arch Demon
 
 I have removed the eyelashes from the Basic Male 8 character because the Arch Demon doesn't have them
 
-I imported the Arch Demon first so he will be the Genesis8Male
+I have removed the horns from the Arch Demon character because the Basic Male 8 doesn't have them
 
-I imported the Basic Male 8 second so he will be the Gensis8Male.001
+I imported the Basic Male 8 first so he will be the Gensis8Male
+
+I imported the Arch Demon second so he will be the Genesis8Male.001
 
 ![Imgur](https://i.imgur.com/DFUjdgS.png)
 
@@ -25,15 +27,15 @@ Click on the Scripting tab at the top and click New to Create a new text data bl
 
 Paste the script
 
-Change the Add_Constraints('Genisis8Male.001','Genesis8Male') to match your character
+Change the Add_Constraints('Genisis8Male','Genesis8Male.001') to match your characters
 
 and click Run Script
 
 ![Imgur](https://i.imgur.com/Rssb5Op.png)
 
-This will move all the bones in the 'Genesis8Male' Arch Demon character to the same location 'Genisis8Male.001' Basic Male character
+This will move all the bones in the 'Genesis8Male.001' Arch Demon character to the same location 'Genisis8Male' Basic Male character
 
-Select the Genisis8Male.Shape first then CTRL select the Genesis8Male.Shape.001 second
+Select the Genisis8Male.Shape.001 first then CTRL select the Genesis8Male.Shape second
 
 Open the Object Data Properties panel
 
@@ -41,13 +43,13 @@ In the ShapeKeys area click the little down arrow and select Join as Shapes
 
 This will add the Arch Demon shapekey (without bone transforms) to your Genesis 8 Male character
 
-Click on the Genesis8Male Rig and go into Pose mode
+Click on the Genesis8Male.001 rig and go into Pose mode
 
 ![Imgur](https://i.imgur.com/FZxti1Z.png)
 
 Hit the "a" to select all the bones
 
-Go up to Pose - then Constraints - and Clera Pose Constraints
+Go up to Pose - then Constraints - and Clear Pose Constraints
 
 ![Imgur](https://i.imgur.com/RYgI77L.png)
 
@@ -55,11 +57,11 @@ This will put the Arch Demon back to his original shape
 
 Go into the Animation Tab at the top
 
-It might be helpful to hide the Genesis8Male (Arch Demon) shape and rig
+It might be helpful to hide the Genesis8Male.001 (Arch Demon) shape and rig
 
 Make sure the Timeline scrubber is set at the beginning of the timeline
 
-Click on the Genesis8Male.001 Rig
+Click on the Genesis8Male Rig
 
 Press "a" to select all the bones
 
@@ -75,9 +77,9 @@ Go back into the Scripting Tab
 
 Change the order of the characters
 So change:
-Change Add_Constraints('Genisis8Male.001','Genesis8Male')
-to this:
 Change Add_Constraints('Genisis8Male','Genesis8Male.001')
+to this:
+Change Add_Constraints('Genisis8Male.001','Genesis8Male')
 
 Run the script again
 
@@ -85,7 +87,7 @@ Run the script again
 
 Go back into the Animation Tab
 
-Move the timeline scrubber up to something like frame 60
+Move the timeline scrubber up to something like frame 120
 
 Make sure all bones are still selected
 
@@ -113,17 +115,17 @@ Change from Pose mode back into Object mode
 
 ![Imgur](https://i.imgur.com/kpUxfsW.png)
 
-Click back on the Genesis8Male.Shape.011
+Click back on the Genesis8Male.Shape
 
 Make sure the animation scrubber is back at the beginning of the timeline
 
-In the shapekey area select the Arch Demon Shapekey (Genesis8Male.shape)
+In the shapekey area select the Arch Demon Shapekey (Genesis8Male.shape.001)
 
 Make sure it's value is set to 0
 
 Click the little dot to the right to Animate property
 
-Once again move the scrubber to 60 (or where you set it before)
+Once again move the scrubber to 120 (or where you set it before)
 
 Change the Value to 1
 
