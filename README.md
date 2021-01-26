@@ -164,10 +164,3 @@ This time select Location and Rotation
 ![Imgur](https://i.imgur.com/5Q7XtL5.png)
 
 Keep adding animaitions as needed.
-
-
-
-
-
-
-F
